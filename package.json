@@ -1,0 +1,26 @@
+{
+  "name": "favourite-vids",
+  "version": "1.0.0",
+  "description": "Save your favourite youtube video's about topics like coding. You can save the video's by entering the ID.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBindels/favourite-vids.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SBindels/favourite-vids/issues"
+  },
+  "homepage": "https://github.com/SBindels/favourite-vids#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
