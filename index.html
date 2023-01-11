@@ -8,9 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="headline">My Favorite Video's</h1>
+                <p>The perfect app to keep track of your favorite video's while learing to code. If you come across a 
+                    helpfull video, add the id here.
+                </p>
+            </div>
+            <form>
+                <label for="videoId">Video Id</label>
+                <input type="text" name="videoId" id="videoId" placeholder="DFGJ#45E">
+                <button onclick="saveVideo(event)">Save the Video</button>
+            </form>
+            <ul id="videosContainer">
+
+            </ul>
+        </div>
+    </div>
    
 
     
-    <script src="js.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
