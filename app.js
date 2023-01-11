@@ -1,11 +1,12 @@
 
 const videosContainer = document.getElementById('videosContainer');
+const videoIdInput = document.getElementById('videoId');
 
 let youTubeVideoIds = [];
 
 const loadVideos = () => {
-    youTubeVideoIds = ["9C74_rOgui8","AbCTlemwZ1k"];
-}
+    youTubeVideoIds = JSON.parse(localStorage.getItem('youTubeVideoIds')) || [];
+};
 
 const displayVideos = () => {
     const videosHTMLString = youTubeVideoIds.map( id => `
@@ -16,9 +17,17 @@ const displayVideos = () => {
         </li>
     `).join("");
     videosContainer.innerHTML = videosHTMLString;
-    console.log(videosHTMLString);
 
 };
+
+const saveVideo = (e) => {
+    e.preventDefault();
+    const videoId = videoIdInput.value;
+    youTubeVideoIds.unshift(videoId);
+    videoIdInput.value = "";
+    localStorage.setItem('youTubeVideoIds', JSON.stringify(youTubeVideoIds));
+    displayVideos();
+}
 
 loadVideos();
 displayVideos();
