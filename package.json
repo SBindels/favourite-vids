@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/SBindels/favourite-vids#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
     "nodemon": "^2.0.20"
   }

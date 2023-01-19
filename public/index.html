@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Video's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="headline">My Favorite Video's</h1>
+                <p>The perfect app to keep track of your favorite video's while learing to code. If you come across a 
+                    helpfull video, add the id here.
+                </p>
+            </div>
+            <form>
+                <label for="videoId">Video ID</label>
+                <input type="text" name="videoId" id="videoId" placeholder="DFGJ#45E">
+                <button onclick="saveVideo(event)">Save the Video</button>
+            </form>
+        </div>
+            <ul id="videosContainer">
+
+            </ul>
+        
+    </div>
+    <div id="popup" onclick="handlePopupClick()" class="closed">
+        <iframe width="560" height="315"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+   
+
+    
+    <script src="script/app.js"></script>
+</body>
+</html>
